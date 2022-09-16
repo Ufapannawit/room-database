@@ -6,12 +6,13 @@
     >
 
     <TextView
-        android:id="@+id/textView2"
-        android:layout_width="match_parent"
+        android:id="@+id/tvId"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Product Name"
+        android:layout_margin="05dp"
         android:textColor="#000000"
-        android:textSize="18sp"
+        android:textSize="22sp"
+        android:textStyle="bold"
         />
 
     <TextView
@@ -24,14 +25,6 @@
         android:textStyle="bold"
         />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Price"
-        android:textColor="#000000"
-        android:textSize="18sp"
-       />
 
     <TextView
         android:id="@+id/tvPrice"

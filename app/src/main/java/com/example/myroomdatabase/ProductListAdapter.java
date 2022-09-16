@@ -35,8 +35,9 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
 
     @Override
     public void onBindViewHolder(@NonNull ProductListAdapter.MyViewHolder holder, int position) {
-        holder.tvName.setText(this.productList.get(position).name);
-        holder.tvPrice.setText(this.productList.get(position).price);
+        holder.tvId.setText("Product ID : "+this.productList.get(position).id);
+        holder.tvName.setText("Product Name : "+this.productList.get(position).name);
+        holder.tvPrice.setText("price : "+this.productList.get(position).price);
     }
 
     @Override
@@ -44,10 +45,12 @@ public class ProductListAdapter extends RecyclerView.Adapter<ProductListAdapter.
         return this.productList.size();
     }
     public class MyViewHolder extends RecyclerView.ViewHolder{
+        TextView tvId;
         TextView tvName;
         TextView tvPrice;
         public MyViewHolder(View view){
             super(view);
+            tvId = view.findViewById(R.id.tvId);
             tvName = view.findViewById(R.id.tvName);
             tvPrice = view.findViewById(R.id.tvPrice);
         }
